@@ -1,3 +1,16 @@
+/*
+    Author: florianz
+
+    Dropcam device handler based on the default Dropcam device code. Adds switch
+    capabilities, which allows for turning the camera on and off.
+
+    Capabilities:
+        - Image Capture
+        - Polling
+        - Refresh
+        - Switch
+*/
+
 metadata {
     simulator {
         status "image": "raw:C45F5708D89A4F3CB1A7EEEE2E0C73D900, image:C45F5708D89A4F3CB1A7EEEE2E0C73D9, result:00"
