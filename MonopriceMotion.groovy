@@ -82,7 +82,7 @@ def parse(String description) {
 def zwaveEvent(physicalgraph.zwave.commands.wakeupv1.WakeUpNotification cmd) {
     def map = [:]
     map.value = "";
-    map.descriptionText = "${map.linkText} woke up"
+    map.descriptionText = "${device.displayName} woke up"
     return map
 }
 
