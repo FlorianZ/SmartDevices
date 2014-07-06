@@ -8,6 +8,12 @@
  */
 
 metadata {
+    definition (name: "Monoprice Door/Window Sensor", author: "florianz") {
+        capability "Battery"
+        capability "Contact Sensor"
+        capability "Sensor"
+    }
+
     simulator {
         status "open":  "command: 2001, payload: FF"
         status "closed": "command: 2001, payload: 00"

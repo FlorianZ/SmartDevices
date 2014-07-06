@@ -7,6 +7,13 @@
  *  Date: 2014-02-19
  */
 metadata {
+    definition (name: "Monoprice Motion Sensor", author: "florianz") {
+        capability "Battery"
+        capability "Motion Sensor"
+        capability "Temperature Measurement"
+        capability "Sensor"
+    }
+    
     simulator {
         status "inactive": "command: 2001, payload: 00"
         status "active": "command: 2001, payload: FF"
